@@ -1,16 +1,24 @@
-[![Shipping files](https://github.com/neuefische/ds-eda-project-template/actions/workflows/workflow-03.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/neuefische/ds-eda-project-template/actions/workflows/workflow-03.yml)
-# ds-project-template
+# README for the EDA example project
 
-Template for creating ds simple projects
+In this repository you will find an exemplary exploratory data analysis (EDA). This was a project work provided by neuefische GmbH as part of the graduation tests for their Data Science bootcamp.
+For this we were given an imaginary stakeholder with a certain profile as well as a data set about housing in the king county area of Seatle.
+My tasks were:
+- fetch the data from a postgres data base via SQL
+- assess and clean the data
+- generate a presentation that is directed towards the stakeholder and adresses his interests.
+
+If you want to run lines of code of the jupyter notebooks of this repository, please set up your system as instructed below.
+In the notebook 1_Fetching_the_data_eda you will see my code to access the data from the data base in order to generate the eda.csv file.
+In the EDA notebook you will find all my code regarding data cleaning, data assessment as well as image preparation.
+The final presentation to the stakeholder Thomas Hansen can can be found in keynote or PDF format.
 
 ## Requirements
 
-- pyenv
-- python==3.11.3
+The requirements are listed in requirements.txt.
 
 ## Setup
 
-One of the first steps when starting any data science project is to create a virtual environment. For this project you have to create this environment from scratch yourself. However, you should be already familiar with the commands you will need to do so. The general workflow consists of... 
+To setup the system in order to run the notebooks, please follow the instructions below:
 
 * setting the python version locally to 3.11.3
 * creating a virtual environment using the `venv` module
@@ -26,7 +34,7 @@ One of the first steps when starting any data science project is to create a vir
     pip install -r requirements.txt
 ```
 
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
+The requirements.txt was generated with the following command at the end of my EDA.
 
 ```bash
 pip freeze > requirements.txt
